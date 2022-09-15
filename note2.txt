@@ -1,0 +1,43 @@
+Variable:
+
+name=value
+
+value can be anything, e.g. string, command, file path, digits, etc.
+
+Who creates variables and uses them: Processes.
+
+Linux has two types of variables:
+a) Environment variable.
+b) Shell variables.
+
+When an environment variable is created then the subsequent processes can also use that variable.
+Environment variable can be created by any process(including the shell process).
+
+The shell variable can only be created by the shell process. Here the subsequent processes won't be able to use that variable.
+
+To see all the environment variables that have already been set, you need to type:
+
+~$ env
+
+You can also use:
+
+~$ printenv
+
+If you want to create your own environment variables, type:
+
+~$ export NAME="whoami"
+
+Now, whoami is a command of Linux which shows you your username.
+But now, you don't have to write 'whoami', just type:
+
+~$ $NAME
+
+and everything will be done!!
+
+To remove the environment variable, type the following command:
+
+~$ unset NAME
+
+This will the environment variable NAME
+
+SHELL VARIABLES
