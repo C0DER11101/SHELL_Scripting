@@ -3,7 +3,7 @@
 ## Who am I?
 
 My name is **Priyanuj Bora** and I am a student who is  pursuing B.Tech in Computer Science Engineering.
-I am in my _3rd year_.
+I am currently in my _3rd year_.
 
 
 ### Why I want to learn Shell Scripting?
