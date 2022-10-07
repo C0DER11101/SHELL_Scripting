@@ -31,7 +31,7 @@ _it's simple, just open .bashrc, and there add the path that you want to add, th
 _You can also change the path in .bashrc file, just open .bashrc and there type:_
 
 ```bash
-export PATH="$PATH:/<you path that you want to add or append>"
+export PATH="$PATH:/<your path that you want to add or append>"
 ```
 
 ## The $UID variable
@@ -77,13 +77,13 @@ _If you use PS1="\u:\h " then the prompt will look something like this:_
 
 _This image should explain itself_
 
-[PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2.png?raw=true "PS2")
+![PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2.png?raw=true "PS2")
 
 When you type a command and after that you add a '\' then the command doesnot end there, instead it goes to the next line and waits for you
 enter more command.
 _Again, the following image is from zsh shell._
 
-[PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2_pt2.png?raw=true "the '\' denotes continuation of command")
+![PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2_pt2.png?raw=true "the '\' denotes continuation of command")
 
 The continued prompt that appears after pressing enter(after adding the '\' after the command) is PS2.
 
@@ -110,7 +110,7 @@ Search the variable in the environment variables.
 env | grep USER
 ```
 The output will look something like this:
-[Output](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/VariableIdetification.png?raw=true)
+![Output](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/VariableIdetification.png?raw=true)
 
 **Step-2**
 
@@ -119,7 +119,7 @@ Search the variable in the shell variables.
 env | grep USER
 ```
 The output will look something like this:
-[Output](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/VariableIdentification_pt2.png?raw=true)
+![Output](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/VariableIdentification_pt2.png?raw=true)
 
 
 ## $EDITOR and $VISUAL
