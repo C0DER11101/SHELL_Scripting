@@ -79,13 +79,13 @@ _This image should explain itself_
 
 ![PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2.png?raw=true "PS2")
 
-When you type a command and after that you add a '\' then the command doesnot end there, instead it goes to the next line and waits for you
+When you type a command and after that you add a \ then the command doesnot end there, instead it goes to the next line and waits for you
 enter more command.
 _Again, the following image is from zsh shell._
 
-![PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2_pt2.png?raw=true "the '\' denotes continuation of command")
+![PS2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/PS2_pt2.png?raw=true "the \ denotes continuation of command")
 
-The continued prompt that appears after pressing enter(after adding the '\' after the command) is PS2.
+The continued prompt that appears after pressing enter(after adding the \ after the command) is PS2.
 
 
 ## PS3
