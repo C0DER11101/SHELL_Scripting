@@ -153,3 +153,61 @@ But the shell variable `wert` was created before turning `allexport` on, so it w
 
 
 # "notify" shell option
+
+`notify` is off by default. So, when we run a commad like this:
+
+`sleep 2 &` (basically, `sleep 2` means pause for 2 seconds), the command is executed but we are not notified about its completion!!
+
+The following image illustrates what I just said.
+
+![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/NotifyShellOption.png?raw=true "Notify is off")
+
+Notice that there is no `[1]+ Done ........` after `sleep` executed!! But when we run a different command like the `w` the notification of completion of the `sleep` appears at the end:
+
+![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/LateNotify.png?raw=true "late notification")
+
+**Basically, it shows the notification only when we run a different command, meaning that it won't show the notification even when 2**
+**seconds have passed**.
+
+So this is late notification, because the `notify` shell option is off!!
+
+To get instant notification, we just need to turn on the `notify` shell option!!
+
+`set -o notify`
+
+Now, when we will write `sleep 2 &` then what will happen it will notify us that `sleep` completed execution after 2 seconds!!
+
+The image below illustrates this:
+
+![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/notifyIsOn.png?raw=true "notify is on")
+
+As you might be able to see from the image above that it displayed `[1]+ Done.....`(after 2 seconds obviously!!), but it notifies the 
+completion at the next prompt. Is that a problem? As shown by the image below, it's not at all a problem because even after notifying
+in the next prompt, the shell will still wait for the user to enter a command as is seen in the image above(the cursor is in the newline, it 
+is waiting for the user to enter a command).
+
+Now, the next image shows that we have entered a command and it executed successfully!!!
+
+![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/notifyIsOn2.png?raw=true "notify is on")
+
+From the image above, it is clearly visible that the command `w` has been entered in the newline(where the cursor was waiting for the user
+to enter a command)!!
+
+
+# "ignoreeof" shell option
+
+When we press `ctrl+d` then the terminal closes. This happens because `ignoreeof` shell option is set to off, but if we turn it on:
+
+`set -o ignoreeof`
+
+then pressing `ctrl+d` won't close the terminal. We will have to explicitly write `exit` to quit the terminal.
+
+`set +o ignoreeof` turns off `ignoreeof`.
+
+
+:heavy_exclamation_mark: **A very important note** :heavy_exclamation_mark:
+
+Any changes made to the shell options is local to that terminal in which the changes have been made. If you close that terminal and start a
+new terminal then you won't find those previous changes, everything will be back to usual.
+
+To make the change permanent, then you should write the change to you `.bashrc` file!!
