@@ -71,7 +71,7 @@ The image here explains things better:
 
 ![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/TheDOTFORWARDSLASH.png?raw=true)
 
-Here the "." means the current directory that is  `/home/priyanuj/Desktop/C0DER11101/ShellScriptLearn` and "/script5" means script5 is in thi
+Here the "." means the current directory that is  `/home/priyanuj/Desktop/C0DER11101/ShellScriptLearn` and "/script5" means script5 is in the
 current working directory!!
 
 
