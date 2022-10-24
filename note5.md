@@ -106,6 +106,6 @@ copied the file `script5` to the folder `cmd`.
 
 ![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/ExecuteWithoutPath2.png?raw=true)
 
-After this, we can simply the name of the file `script5` in this case and it will run like `ls`, `cd` or any other linux command.
+After this, we can simply type the name of the file `script5` in this case and it will run like `ls`, `cd` or any other linux command.
 
 ![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/ExecuteWithoutPath4.png?raw=true)
