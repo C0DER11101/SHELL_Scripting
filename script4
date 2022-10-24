@@ -1,0 +1,4 @@
+#! /bin/bash
+# the space between #! and /bin/bash is optional, you may/maynot provide it
+
+echo "Hello"
