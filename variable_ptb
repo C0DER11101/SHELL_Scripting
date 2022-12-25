@@ -1,0 +1,10 @@
+#! /bin/bash
+
+var="abc*"
+
+
+echo "${var}"
+echo ${var}
+
+ls "${var}"
+ls ${var}
