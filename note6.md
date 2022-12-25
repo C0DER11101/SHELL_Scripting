@@ -64,3 +64,29 @@ But the second command `ls ${var}` is same as writing `ls abc*` that means show 
 **Output:**
 
 <img src="https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/Output2.png" width="70%" height="40%">
+
+
+## Storing a command in a variable
+
+There are two ways of storing a command into a variable.
+
+First way:  using backticks \`.
+
+Second way: using $()
+
+
+[StoringOutputToVariable](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/StoringOutputToVariable)
+
+This file shows the two ways how we can store a command in a variable.
+
+The first way(using backticks) :
+
+```bash
+var=`ls -l`
+```
+
+The second way(using `$()`) :
+
+```bash
+service=$(systemctl status apache2)
+```
