@@ -1,0 +1,10 @@
+#! /bin/bash
+
+
+var=`ls -l`
+
+service=$(systemctl status apache2)
+
+echo $var
+
+echo $service
