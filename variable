@@ -1,0 +1,15 @@
+#! /bin/bash
+
+var=45
+var1="this is good"
+
+
+echo $var
+
+echo $var1
+
+# concept of using {} with variable names:
+
+# these two lines highlight the importance of {} with the $ sign!!
+echo ${var}is a number
+echo $varis a number
