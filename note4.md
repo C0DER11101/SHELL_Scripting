@@ -32,12 +32,12 @@ For example:
 
 When you type `ls` in a folder in your shell, it lists you the directories and files present in that folder.
 
-Now, after this, you type `!!` in your shell and press enter, you will see that again previous command i.e `ls` will repeated and again
+Now, after this, you type `!!` in your shell and press enter, you will see that again previous command i.e `ls` will be repeated and again
 the list of directories and files present in that folder will be shown.
 
 The image illustrates what I just said:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/theTwoExclamationMarks.png?raw=true "!! command")
+<img src="https://user-images.githubusercontent.com/96164229/219059356-fbce720c-07fc-4aab-bdab-76dc65ec8143.png" width="60%" height="60%">
 
 Now, if you want the shell to treat `!` as a normal character then, you will have to turn off "histexpand" shell option!!
 
@@ -53,36 +53,36 @@ Again, to turn it back on, type:
 If you type `echo {1..15}` ( the two dots `..` are mandatory) then it print all numbers from 1 to 15.
 The image below shows it:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/TheBraces.png?raw=true "echo {1..15}")
+<img src="https://user-images.githubusercontent.com/96164229/219057608-c98c2201-bb68-426c-9e50-384b347c74ac.png" width="60%" height="60%">
 
 `echo {1..30..2}` displays numbers by from 1 to 29, the `2` represents the offset that is the number which each number should be incremented.
 
 The images illustrates this:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/OffsetInEcho.png?raw=true "echo {1..30..2}")
+<img src="https://user-images.githubusercontent.com/96164229/219056514-7119b662-5c16-46a3-b84f-c823989b44cb.png" width="60%" height="60%">
 
 You can also print alphabets in the same manner, you can also put the interval/offset(the third argument, it should always be a number).
 
 the following image shows more functionalities of `{}`.
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/MoreOnBraces.png?raw=true "All about {}")
+<img src="https://user-images.githubusercontent.com/96164229/219055927-807ae75b-2136-46ea-be8d-1ed389086ce2.png" width="60%" height="60%">
 
 One awesome trick that you can do with the braces `{}` is this:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/CreateManyFiles.png?raw=true "Create 15 text files")
+<img src="https://user-images.githubusercontent.com/96164229/219054243-fd959f14-c1db-4753-808c-54551a667e1c.png" width="60%" height="60%">
 
 Here, we have created 15 text files :blush:
 
 Like we created the 15 text files using the braces, we can also delete those 15 text fils using the braces, the image shows this:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/DeletingManyFilesAtOnce.png?raw=true "Delete 15 text files")
+<img src="https://user-images.githubusercontent.com/96164229/219054534-d3fa770c-6661-419f-b56d-f6cf0bdf0d6e.png" width="60%" height="60%">
 
 Now, when you turn off the `braceexpand` shell option: `set +o braceexpand` it will not display any range, nor will you be able to create
 many files at once.
 
 The following image illustrates what I mean:
 
-![Image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/Disabling_braceexpand.png?raw=true "Disabling the braceexpand")
+<img src="https://user-images.githubusercontent.com/96164229/219054679-37c17585-6310-4e64-96d5-ab5f7fea9f6a.png" width="60%" height="60%">
 
 `set -o braceexpand` enables the shell option `braceexpand` again!!
 
@@ -93,7 +93,7 @@ The `noglob` shell option is off by-default, that means we can use wildcards in 
 
 This image shows the use of a wildcard(`[]`):
 
-![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/Thewildcards.png?raw=true "[]")
+<img src="https://user-images.githubusercontent.com/96164229/219057747-70100ef0-be70-4c33-809f-7a3f3d9fb02b.png" width="60%" height="60%">
 
 When we used `ls file[12].txt`, it meant that the shell should list only file1.txt and file2.txt and no other files should be listed!
 
@@ -103,7 +103,7 @@ Now let us enable `noglob`:
 
 Now if we use the same command `ls file[12].txt`, it shows us the following error!!
 
-![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/NoglobEnabled.png?raw=true "enable noglob, disable wildcards")
+<img src="https://user-images.githubusercontent.com/96164229/219056156-dfaa2bbe-e582-4d10-a214-d44089b6a401.png" width="60%" height="60%">
 
 
 # "noclobber" shell option
@@ -115,7 +115,8 @@ It allows existing files to be overwritten by the newly entered data.
 It is only for the output-redirection operator!!
 
 Consider the following image:
-![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/noclobberdisabled.png?raw=true "noclobber is off")
+
+<img src="https://user-images.githubusercontent.com/96164229/219058586-9fe5c97a-fe18-4e3a-a59d-5343cd0be777.png" width="60%" height="60%">
 
 `echo "Hello World" > file1.txt` basically writes the output i.e `Hello World` into the text file `file1.txt`
 
@@ -128,7 +129,7 @@ Now, let us turn on `noclobber`:
 
 The following image shows all of it:
 
-![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/noclobberisOn.png?raw=true "noclobber is on")
+<img src="https://user-images.githubusercontent.com/96164229/219058658-bf58b939-eb90-4b8b-88f9-929f476e9955.png" width="60%" height="60%">
 
 So, with `noclobber` on, the file `file1.txt` will never be overwritten.
 
@@ -146,7 +147,7 @@ It's for automatically converting the shell variable into environment variable!!
 
 The following image illustrates what I just said:
 
-![image](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/allexportShellOption.png?raw=true "allexport")
+<img src="https://user-images.githubusercontent.com/96164229/219058103-01700233-dad5-4bd2-a607-96f9e24dce04.png" width="60%" height="60%">
 
 Once, `allexport` is turned on, the shell variable `asdf` is automatically converted into an environment variable!!
 But the shell variable `wert` was created before turning `allexport` on, so it won't be converted to environment variable.
