@@ -21,26 +21,36 @@ The shell variable can only be created by the shell process. Here the subsequent
 
 To see all the environment variables that have already been set, you need to type:
 
-~$ env
+```bash
+env
+```
 
 You can also use:
 
-~$ printenv
+```bash
+printenv
+```
 
 If you want to create your own environment variables, type:
 
-~$ export NAME="whoami"
+```bash
+export NAME="whoami"
+```
 
 Now, whoami is a command of Linux which shows you your username.
 But now, you don't have to write 'whoami', just type:
 
-~$ $NAME
+```bash
+NAME
+```
 
 and everything will be done!!
 
 To remove the environment variable, type the following command:
 
-~$ unset NAME
+```bash
+unset NAME
+```
 
 This will the environment variable NAME
 
