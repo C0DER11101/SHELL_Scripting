@@ -16,7 +16,7 @@ apt search tcsh
 >To print hidden directories, type:
 
 ```bash
-~$ ls -a
+ls -a
 ```
 
 
@@ -46,7 +46,7 @@ Changes will be done, but they won't be shown, so you will have to login as 'pri
 following command:
 
 ```bash
-~$ su - priyanuj
+su - priyanuj
 ```
 Again your user password will be asked, enter it and press Enter. But this will still not work, so again
 you will need to log out and then login again. You can also restart the computer if you want to.
