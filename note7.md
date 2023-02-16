@@ -84,6 +84,41 @@ Here we try to access `text` after unsetting it, but as shown by the image above
 
 
 ## Read-only variables
+We use the command `readonly` before a variable to make it a readonly variable.
+
+[t7](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t7) shows how the `readonly` command is used.
+
+After using the `readonly` command on the variable `text`, we are trying to modify it by assigning it a new value. So, the following output was generated:
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/219383031-112ac557-4c23-4e54-bc38-9f04d309d502.png" width="60%" height="60%">
+
+So a readonly variable can neither be modified nor it can be unset.
+
+See [t7_b](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t7_b).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/219385634-779179f2-7d98-4e50-8db7-429e731d8500.png" width="60%" height="60%">
+
+What if we wanted to make multiple readonly variables? Well, in that case we just add the names like this:
+
+```bash
+readonly text VAR1 VAR2
+```
+
+this will make `text`, `VAR1` and `VAR2` as readonly variables.
+
+**Assigning variables values while making them readonly.**
+
+This is how you assign value to a variable while making it readonly:
+
+```bash
+readonly VARIABLENAME="This is a constant text"
+```
+
+Here, `VARIABLENAME` has been assigned a constant value which cannot be changed.
 
 
 
