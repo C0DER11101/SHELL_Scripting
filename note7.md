@@ -42,7 +42,7 @@ To prompt the user to enter a text we use `-p` with `read` as shown in the progr
 
 <img src="https://user-images.githubusercontent.com/96164229/219344080-58fa52b2-950a-4783-b44f-d6a5b89af65a.png" width="60%" height="60%">
 
-## Stop taking after encountering a certain character
+## Stop taking input after encountering a certain character
 
 Now, till here when we entered the return key, the script stopped taking user input. But now what we want to do is that as soon we hit a particular character the script will stop taking input(we don't have to press the return key).
 
