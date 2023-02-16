@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter a text: " text
+
+echo
+echo entered text: ${text}
+
+unset text
+
+echo
+echo accessing text: ${text}
