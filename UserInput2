@@ -1,8 +1,0 @@
-#! /bin/bash
-
-echo "enter a value: "
-
-read a
-
-
-echo The value of a is ${a}
