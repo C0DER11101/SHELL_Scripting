@@ -1,0 +1,9 @@
+#!/bin/bash
+
+read -p "enter some text: " text
+
+readonly text
+
+echo value in readonly variable: ${text}
+
+unset text
