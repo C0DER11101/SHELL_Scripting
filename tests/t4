@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -d "." -p "Enter something: " INPUT
+
+echo
+echo ${INPUT}
