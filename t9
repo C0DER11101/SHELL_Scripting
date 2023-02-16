@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "Line before exit"
-
-exit 127
