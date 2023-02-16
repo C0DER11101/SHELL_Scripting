@@ -42,6 +42,7 @@ To prompt the user to enter a text we use `-p` with `read` as shown in the progr
 
 <img src="https://user-images.githubusercontent.com/96164229/219344080-58fa52b2-950a-4783-b44f-d6a5b89af65a.png" width="60%" height="60%">
 
+## Stop taking after encountering a certain character
 
 Now, till here when we entered the return key, the script stopped taking user input. But now what we want to do is that as soon we hit a particular character the script will stop taking input(we don't have to press the return key).
 
@@ -50,6 +51,41 @@ This is what we do in [t4](https://github.com/C0DER11101/SHELL_Scripting/blob/Sh
 **Output:**
 
 <img src="https://user-images.githubusercontent.com/96164229/219350247-eca2437a-1ded-4c0c-831f-87f717121e6c.png" width="60%" height="60%">
+
+Here, the script stops taking input as soon as we press the period `"."`. `"."` doesn't get stored in `INPUT`.
+
+
+## Silent input
+
+Now, if you are on Linux, then you might have observed this that when you enter your password in your terminal to download a something then your password is not being shown as you type it in. This is actually "silent input" where the input that you give basically remains "invisible" but actually each and every character is being entered as you type, it's just not being shown. This kind of input can be achieved by using `-s` after `read` as shown by [t5](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t5).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/219376405-5d8a0a8f-0edf-4f44-9e4e-aa58db39d1f7.png" width="60%" height="60%">
+
+## Unsetting a variable
+
+We use `unset` to unset a variable that has been set to a value via assignment or through user input.
+
+The syntax is simple:
+
+```bash
+
+unset <variableName>
+```
+
+[t6](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t6) shows how `unset` is used.
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/219380361-2b42e210-a1eb-44fa-9f6e-a2c8763f9bb0.png" width="60%" height="60%">
+
+Here we try to access `text` after unsetting it, but as shown by the image above nothing is displayed after the text `accessing text:`. That means `text` has been unset.
+
+
+## Read-only variables
+
+
 
 
 ---
