@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "This line is before exit command"
+
+exit
+
+echo "This line is after exit command"
