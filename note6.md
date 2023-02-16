@@ -42,7 +42,7 @@ Now, here the output is produced as `45hello`. So, this is the importance of `{}
 
 ## Difference between variable name within double quotes and variable not within double quotes
 
-[variable_ptb](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/variable_ptb) shows the difference between variable withing double quotes and variable not within double quotes.
+[variable_ptb](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/variable_ptb) shows the difference between variable within double quotes and variable not within double quotes.
 
 
 In this file, we initialized `var` with `"abc*"`, then we used these two lines
@@ -57,13 +57,13 @@ which ends up giving the file not found error, because there no file that starts
 
 **Output:**
 
-<img src="https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/Output1.png" width="70%" height="40%">
+<img src="https://user-images.githubusercontent.com/96164229/219056598-08d73a9f-2a4f-49d5-9bca-22da05a9d794.png" width="70%" height="40%">
 
 But the second command `ls ${var}` is same as writing `ls abc*` that means show all those files whose name has `abc` included in it; and this shows the files `abc1.txt`, `abc2.txt` all the way to `abc5.txt`.
 
 **Output:**
 
-<img src="https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/Output2.png" width="70%" height="40%">
+<img src="https://user-images.githubusercontent.com/96164229/219056646-92a49ba4-aafc-4f55-bb90-7f9293cdfa4e.png" width="70%" height="40%">
 
 
 ## Storing a command in a variable
