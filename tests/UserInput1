@@ -1,0 +1,11 @@
+#! /bin/bash
+
+
+# basic read command usage
+
+
+echo "enter a text: "
+
+read
+
+echo The text that you entered is ${REPLY}
