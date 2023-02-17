@@ -1,4 +1,4 @@
-# Test commands, [] vs [[]] and advance features of [[]]
+# Test command, [] vs [[]] and advance features of [[]]
 
 ## test command
 
