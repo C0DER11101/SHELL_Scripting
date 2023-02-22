@@ -107,6 +107,8 @@ You can combine more than two expressions using `-o` as well.
 
 **The double square bracket pair** (`[[]]`) **is the enhanced version of the test command.**
 
+**There should be proper spacing between the brackets and the contents inside the brackets!!**
+
 
 #### [ ]
 The image below shows the use of `[]`:
@@ -122,7 +124,59 @@ This command will evaluate to false, because we are using the not operator `!` h
 <img src="https://user-images.githubusercontent.com/96164229/220533639-4d3a48c2-c220-4ec4-920c-6006faf96484.png" width="60%" height="60%">
 
 #### [[ ]]
+>This bracket pair supports the relational operators (<, <=, >, >=) which single bracket pair doesnot support.
 
+<img src="https://user-images.githubusercontent.com/96164229/220534720-b7037f5b-a2fd-474c-b088-81d5aaa2603c.png" width="60%" height="60%">
+
+This pair brackets also supports `&&` and `||` operators.
+
+<img src="https://user-images.githubusercontent.com/96164229/220535560-4962cda9-6917-417c-9d7e-21a06f0abffe.png" width="60%" height="60%">
+
+`-n "Hello"` means check if the string `"Hello"` is non-zero which is in this case is true!! You can find all comparison operators using the following command:
+```bash
+man test
+```
+
+The double square brackets also shell globbing characters:
+
+<img src="https://user-images.githubusercontent.com/96164229/220537938-e69586d1-84bb-48de-9df8-41ae7d9c0cf3.png" width="60%" height="60%">
+
+We can also compare two strings:
+
+<img src="https://user-images.githubusercontent.com/96164229/220538498-3d0b8215-8b06-4a95-907c-bcb76747bb88.png" width="60%" height="60%">
+
+We can also use other wildcards with the doubel square brackets: `*`, `?`, `[]`.
+
+`{}` *(braceexpand) as globbing character is not supported in double square brackets!!*
+
+```bash
+[[ "string" =~ str ]]
+```
+
+#### RegeX with double square brackets!!
+
+In the command above, we are using `=~` to check whether `str` is a substring of `"string"`. If `str` is in `"string"` then this command will return true.
+
+<img src="https://user-images.githubusercontent.com/96164229/220539893-5f61c9a4-6da5-4cdd-91a3-a3f316c4c055.png" width="60%" height="60%">
+
+So the command returns true because we can see `str` in `"string"`.
+
+
+```bash
+[[ "string" =~ [a-z]tring ]]
+```
+Here the regex `[a-z]` means any lowercase character between `a` and `z`(both inclusive). This will return true because `s` falls between `a` and `z`.
+
+<img src="https://user-images.githubusercontent.com/96164229/220544557-a6a9c2c9-e84a-4b14-8f66-1c9b4b2b277f.png" width="60%" height="60%">
+
+
+```bash
+[[ "string" =~ [^a-z]tring ]]
+```
+
+`[^a-z]` means that first letter of the string should not by any lowercase character between `a` and `z`(both inclusive). This command will return false.
+
+<img src="https://user-images.githubusercontent.com/96164229/220544585-68d4587d-2a3f-4bbf-bf5e-7667d2e8693f.png" width="60%" height="60%">
 
 
 
