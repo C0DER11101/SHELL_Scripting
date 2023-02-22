@@ -100,7 +100,7 @@ test 9 -gt 12 -o -d testCommandOutput11.png
 You can combine more than two expressions using `-o` as well.
 
 
-### [] and [[]]
+### [ ] and [[ ]]
 >Both these square brackets are reference of the test command.
 
 **The single square bracket pair** (`[]`) **is same as using the test command.**
@@ -108,7 +108,7 @@ You can combine more than two expressions using `-o` as well.
 **The double square bracket pair** (`[[]]`) **is the enhanced version of the test command.**
 
 
-#### []
+#### [ ]
 The image below shows the use of `[]`:
 
 <img src="https://user-images.githubusercontent.com/96164229/220532150-be553a61-15ac-414a-b6f4-2458cea3b3d9.png" width="60%" height="60%">
@@ -121,7 +121,7 @@ This command will evaluate to false, because we are using the not operator `!` h
 
 <img src="https://user-images.githubusercontent.com/96164229/220533639-4d3a48c2-c220-4ec4-920c-6006faf96484.png" width="60%" height="60%">
 
-#### [[]]
+#### [[ ]]
 
 
 
