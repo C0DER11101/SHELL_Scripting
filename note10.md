@@ -120,4 +120,17 @@ fi
 ```
 
 
+## Important
+
+To check if a user exists or not using command line in Linux we have to use the `id` command. This is how to use it:
+
+```bash
+id <username>
+```
+
+**Image:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221340217-06882c93-b3cd-4c75-856a-e9e46cd5739d.png" width="60%" height="60%">
+
+
 ---
