@@ -57,7 +57,7 @@ sudo adduser --disabled-password <username> --gecos "username, roomno, workphone
 
 <img src="https://user-images.githubusercontent.com/96164229/221343571-c36a653e-98c5-46f5-945c-6ccc05151c3d.png" width="60%" height="60%">
 
-Now, we don't want the output to be shown to us, like it's shown in the above image:
+Now, we don't want the output to be shown to us, like it's shown in the image below:
 
 <img src="https://user-images.githubusercontent.com/96164229/221344091-80a08fe1-fd95-4e31-998a-90701719fdc0.png" width="60%" height="60%">
 
