@@ -34,10 +34,13 @@ sudo adduser <username> --gecos "username, roomno, workphone, homephone, other"
 
 <img src="https://user-images.githubusercontent.com/96164229/221343299-ef76fb3e-1cc3-452e-8136-cb1f98bf42e6.png" width="60%" height="60%">
 
+`--gecos` just allows us to enter the fullname, roomno, etc..(basically the new user details) in the same line along `adduser` command(as shown in the image above).
+
 
 **New user created:**
 
 <img src="https://user-images.githubusercontent.com/96164229/221343327-fd23d897-8f40-4989-93d3-c46c39d253cd.png" width="60%" height="60%">
+
 
 Now, say, we also don't want to be prompted to enter password either. In that case, we can use this command:
 
