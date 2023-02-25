@@ -66,7 +66,7 @@ We just have to redirect the output of the command to `/dev/null`:
 
 <img src="https://user-images.githubusercontent.com/96164229/221344455-fc869d7d-c733-44d8-baea-3ecfd04d084b.png" width="60%" height="60%">
 
-Now, since we created some users by disabling the password using `--disable-password` option, we have to change the password of those users, so for that we can use this command:
+Now, since we created some users by disabling the password using `--disabled-password` option, we have to change the password of those users, so for that we can use this command:
 ```bash
 sudo chpasswd
 ```
