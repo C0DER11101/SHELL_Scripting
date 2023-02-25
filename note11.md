@@ -108,7 +108,7 @@ Script: [userCheck](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScri
 
 **Output:**
 
-<img src="https://user-images.githubusercontent.com/96164229/221348419-4e47c3c1-fc3e-49e7-8710-3421455ea138.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221352404-70b7df5a-a45a-49c8-a0e2-a62788eea006.png" width="60%" height="60%">
 
 **Note**
 
