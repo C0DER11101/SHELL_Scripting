@@ -81,7 +81,7 @@ Press "enter" and then you have to enter the username for whom you want to chang
 
 Example:
 
-To change the password `Hello13` then you will have to type: `hello13:hello`, where `hello13` is the username that we used with `adduser` command. **Don't use the full name in place of the username. It will throw an error.**
+To change the password of user `Hello13` you will have to type: `hello13:hello`, where `hello13` is the username that we used with `adduser` command. **Don't use the full name in place of the username. It will throw an error.**
 
 **ERROR:**
 
