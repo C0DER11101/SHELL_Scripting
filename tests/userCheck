@@ -6,9 +6,20 @@ id ${REPLY} &> /dev/null
 
 if [ $? -eq 0 ]
 then
-	echo "User exists!!"
+	echo "User ${REPLY} exists!!"
 
 else
-	echo "User doesnot exist!!"
+	echo "User ${REPLY} doesnot exist!!"
+	echo "Creation of user ${REPLY} commencing!!"
+	read -s -p "Please enter password for user ${REPLY}: " PASSWD
+
+	if [ -z ${PASSWD} ] # type "man test" to know about -z option
+	then
+		echo -e "\nUser creation for user ${REPLY} aborted!!" # type "man echo" to know about options like -e
+	else
+		adduser --disabled-password ${REPLY} --gecos "Hello"
+		echo "${REPLY}:${PASSWD}" | chpasswd
+		echo "ok"
+	fi
 
 fi
