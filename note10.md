@@ -16,7 +16,7 @@ fi
 
 The commands are written `<condition>`, if the exit status code of the command is 0 then it will be taken as true otherwise it will be taken as false.
 
-The `fi` is like [`#endif`](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/TheDirectives.md#5-if-and-endif) in C because it terminates the `if` in shell scripting just like `#endif` terminates `#if`.
+The `fi` is like [`#endif` in C ](https://github.com/C0DER11101/CPrograms/blob/CProgramming/CPreprocessors/TheDirectives.md#5-if-and-endif) because it terminates the `if` in shell scripting just like `#endif` terminates `#if`.
 
 
 ### Variation 2
