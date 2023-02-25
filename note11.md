@@ -100,4 +100,24 @@ echo "hello12:hello121" | chpasswd
 
 We send the output to the standard input to `chpasswd` command. This method will be used in shell scripting.
 
+
+Script: [userCheck](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/userCheck).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221348419-4e47c3c1-fc3e-49e7-8710-3421455ea138.png" width="60%" height="60%">
+
+**Note**
+
+while running `userCheck` we need to provide `sudo` before it as shown in the image above because `adduser` command requires sudo privileges to run. *But* note that if you provide `sudo` before `adduser` command in `userCheck` as:
+```bash
+sudo adduser --disables-password ${REPLY} --gecos ""
+```
+
+it's still going to need sudo privileges to run. So run `userCheck` as:
+```bash
+sudo ./userCheck
+```
+
+
 ---
