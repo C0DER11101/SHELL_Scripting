@@ -17,7 +17,7 @@ else
 	then
 		echo -e "\nUser creation for user ${REPLY} aborted!!" # type "man echo" to know about options like -e
 	else
-		adduser --disabled-password ${REPLY} --gecos "Hello"
+		adduser --disabled-password ${REPLY} --gecos ""
 		echo "${REPLY}:${PASSWD}" | chpasswd
 		echo "ok"
 	fi
