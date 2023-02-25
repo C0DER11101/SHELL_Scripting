@@ -28,8 +28,8 @@ then
 	statement2
 	...
 else
-	statement1
-	statement2
+	statement3
+	statement4
 	...
 fi
 ```
@@ -50,8 +50,8 @@ then
 else
 	if <condition>
 	then
-		statement1
-		statement2
+		statement3
+		statement4
 		...
 	fi
 
@@ -69,10 +69,53 @@ then
 	...
 elif <condition>
 then
+	statement3
+	statement4
+	...
+
+fi
+```
+
+### Variation 4
+
+```bash
+if <condition>
+then
 	statement1
 	statement2
 	...
+else
+	if <condition>
+	then
+		statement3
+		statement4
+		...
+	else
+		statement5
+		statemetn6
+		...
+	fi
 
+fi
+```
+
+The above variation can also be written as:
+
+```bash
+if <condition>
+then
+	statement1
+	statement2
+	...
+elif
+then
+	statement3
+	statement4
+	...
+else
+	statement5
+	statement6
+	...
 fi
 ```
 
