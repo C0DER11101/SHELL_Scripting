@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Enter username: "
+
+id ${REPLY} &> /dev/null
+
+if [ $? -eq 0 ]
+then
+	echo "User exists!!"
+
+else
+	echo "User doesnot exist!!"
+
+fi
