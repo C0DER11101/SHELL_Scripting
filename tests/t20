@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ((1<2))
+then
+	echo "Okay!!"
+else
+	echo "End!!"
+fi
