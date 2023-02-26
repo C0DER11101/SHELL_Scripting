@@ -144,4 +144,5 @@ The `bc` calculator can also be used for arithmetical operations on integers. Ch
 (()) only evaluates the expression that is written inside of it. **It doesnot return any standard output**.
 
 \$(()) on the other hand **returns standard output**.
+
 ---
