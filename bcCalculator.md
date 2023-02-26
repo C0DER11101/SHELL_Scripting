@@ -13,7 +13,7 @@ It supports all the arithmetical operators.
 We can also initialize variables here.
 
 
-<img src="https://user-images.githubusercontent.com/96164229/221397660-0a69bc7e-51a2-4547-88bb-b1df22b63270.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221397660-0a69bc7e-51a2-4547-88bb-b1df22b63270.png" width="134" height="267">
 
 
 We can also use relational operators and increment and decrement operators.
@@ -22,7 +22,7 @@ We can also use relational operators and increment and decrement operators.
 
 In the image below, you can see the post increment operator and the pre increment operators.
 
-<img src="https://user-images.githubusercontent.com/96164229/221397798-f4c71ed0-34b7-4c30-be25-8a48951687d6.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221397798-f4c71ed0-34b7-4c30-be25-8a48951687d6.png" width="134" height="267">
 
 Notice, when we did `a++` then after pressing enter it showed us the value `10`, which was a's previous value, then when we again typed `a` then this time it showed `11`. This actually happened because we used the post-increment operator.
 
