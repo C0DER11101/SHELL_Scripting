@@ -145,4 +145,101 @@ The `bc` calculator can also be used for arithmetical operations on integers. Ch
 
 \$(()) on the other hand **returns standard output**.
 
+Consider the file below:
+
+`paren1`
+
+```bash
+((1+2))
+```
+
+When we will run this script then nothing will be produced because even though `1+2` was evaluated to `3` but it wasn't returned so we get no output.
+
+
+But in this file:
+
+`paren2`
+
+```bash
+$((1+2))
+```
+
+When we will run this script then we will get an output saying `3: command not found`.
+
+
+[paren1](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/paren1).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221406331-886421f7-b15e-4a19-995c-8b15da8e5a99.png" width="60%" height="60%">
+
+
+[paren2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/paren2).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221406797-076db0e0-2371-4e8a-a82e-86e67fe5a23f.png" width="60%" height="60%">
+
+In this output of `paren2` we can see `$((1+2))` actually returned `3` and that's why we got the error `3: command not found`
+
+
+**Where to use (()) and \$(())?**
+
+>When we want to assign the value of some expression to a variable outside (()) then we must use \$ before (()) i.e. \$(()).
+
+Example:
+```bash
+a=$((1+2))
+```
+`a` stores `3`.
+
+>If we are assigning the value of an expression to a variable inside (()) then we neednot use \$ before (()).
+
+Example:
+```bash
+((a=1+2))
+```
+Here also `a` stores `3`.
+
+
+## Exit status code of (())
+
+* if evaluation of an expression inside (()) produces a non-zero result then the exit status code of (()) is 0.
+* if evaluation of an expression inside (()) produces a zero then the exit status code of (()) is 1.
+
+
+[t19](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t19).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221407290-b1d01379-6106-4c61-80b3-f72ba0b9cbd6.png" width="60%" height="60%">
+
+[t19_b](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t19_b)
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221407439-5fb25a15-943c-4415-b207-5b380e28670c.png" width="60%" height="60%">
+
+The images above clarify about the exit status code of (()).
+
+
+## Using (()) in conditionals
+
+We can also use (()) with conditionals as shown in the file below:
+
+[t20](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t20).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221407750-6b497a97-43ca-4601-a44e-8444226c7275.png" width="60%" height="60%">
+
+We can also use variables inside (()) for conditionals as shown in the file below:
+
+[t21](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t21).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221407929-6d4f7d3c-572d-44bf-9371-00997d976de1.png" width="60%" height="60%">
+
+
 ---
