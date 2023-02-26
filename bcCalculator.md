@@ -44,7 +44,7 @@ The pre-increment operator basically means *first increment the value, then use 
 
 The image below shows the relational operators.
 
-<img src="https://user-images.githubusercontent.com/96164229/221398078-bc44f967-a461-4769-b120-41fcf5d83c99.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221398078-bc44f967-a461-4769-b120-41fcf5d83c99.png" width="142" height="349">
 
 
 In `bc` any non-zero value is considered as true and 0 is considered as false.
@@ -54,21 +54,21 @@ In `bc` any non-zero value is considered as true and 0 is considered as false.
 
 ### Logical AND
 
-<img src="https://user-images.githubusercontent.com/96164229/221398227-8a9b3638-84b3-441b-aa84-d3a7fc03bfc2.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221398227-8a9b3638-84b3-441b-aa84-d3a7fc03bfc2.png" width="158" height="270">
 
 
 ### Logical OR
 
-<img src="https://user-images.githubusercontent.com/96164229/221398270-7bf3aedf-88c0-47c5-8680-8323e17fb95d.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221398270-7bf3aedf-88c0-47c5-8680-8323e17fb95d.png" width="209" height="287">
 
 ## Assignment operators
 
-<img src="https://user-images.githubusercontent.com/96164229/221398340-c6096d60-e074-49fd-a128-dcf9b85c4f80.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221398340-c6096d60-e074-49fd-a128-dcf9b85c4f80.png" width="248" height="462">
 
 
 There is a variable called `last` in `bc` which tells us the most recent value.
 
-<img src="https://user-images.githubusercontent.com/96164229/221398433-cfb770c1-9609-43d4-ae6e-7b3e20cc1823.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221398433-cfb770c1-9609-43d4-ae6e-7b3e20cc1823.png" width="176" height="272">
 
 Here `last` is `19` which was the value of `a` after it was added to `9`, that was the most recent value used.
 
@@ -88,7 +88,7 @@ s(1)
 ```
 `1` is in radians.
 
-<img src="https://user-images.githubusercontent.com/96164229/221399425-0284aa37-921b-44ba-858f-d1ee06494be6.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221399425-0284aa37-921b-44ba-858f-d1ee06494be6.png" width="327" height="106">
 
 For $cosine$
 
@@ -96,7 +96,7 @@ For $cosine$
 c(1)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401024-c69b7a20-9db2-4f4b-b3e7-775e76c00d93.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401024-c69b7a20-9db2-4f4b-b3e7-775e76c00d93.png" width="330" height="92%">
 
 
 For $log$
@@ -105,7 +105,7 @@ For $log$
 l(23)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401079-acac7431-34e2-4df5-920f-c11306ecf5a8.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401079-acac7431-34e2-4df5-920f-c11306ecf5a8.png" width="328" height="100%">
 
 Exponentiation
 
@@ -113,7 +113,7 @@ Exponentiation
 e(2)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401209-58cf1f53-498c-4c3f-8de8-8e32ea53650a.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401209-58cf1f53-498c-4c3f-8de8-8e32ea53650a.png" width="434" height="111">
 
 Square root
 
@@ -121,7 +121,7 @@ Square root
 sqrt(25)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401242-98762345-37f7-4164-af05-32d22684a576.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401242-98762345-37f7-4164-af05-32d22684a576.png" width="375" height="104">
 
 
 Finding length of a number:
@@ -130,7 +130,7 @@ Finding length of a number:
 length(123456)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401289-da4f0249-0c09-461b-9f15-8a0ec4e501bd.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401289-da4f0249-0c09-461b-9f15-8a0ec4e501bd.png" width="292" height="108">
 
 Manipulating number digits to be displayed after the deimal point.
 
@@ -141,7 +141,7 @@ scale=2
 sqrt(16)
 ```
 
-<img src="https://user-images.githubusercontent.com/96164229/221401365-1bebe3da-1b34-4f28-8a26-12a6ef4b5472.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401365-1bebe3da-1b34-4f28-8a26-12a6ef4b5472.png" width="192" height="146">
 
 ## Changing base in `bc`
 
@@ -161,17 +161,17 @@ Let's say we set `obase` to `16` i.e. hexadecimal.
 
 The image shows what will happen:
 
-<img src="https://user-images.githubusercontent.com/96164229/221401613-72f57a68-a01a-48db-a528-4d73068c63d9.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401613-72f57a68-a01a-48db-a528-4d73068c63d9.png" width="248" height="463">
 
 So that means everytime we enter a decimal number `bc` will show us its hexadecimal equivalent!!
 
 We can also perform arithmetic operations:
 
-<img src="https://user-images.githubusercontent.com/96164229/221401659-ba6a2501-651c-499f-9baf-5338df7f627c.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401659-ba6a2501-651c-499f-9baf-5338df7f627c.png" width="179" height="120">
 
 Similarly, when `obase=2`
 
-<img src="https://user-images.githubusercontent.com/96164229/221401724-556ce647-fecb-404b-98f9-43da225cc6ec.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401724-556ce647-fecb-404b-98f9-43da225cc6ec.png" width="355" height="352">
 
 Now, that was all about when input was in decimal and output was in either in binary or hexadecimal or octal or decimal.
 
@@ -181,7 +181,7 @@ Now, the input will be either in decimal or in binary or in octal or in hexadeci
 For changing the base of the input, we have to change the value of a variable called `ibase`(input base which can store all those values that `obase` can store).
 
 
-<img src="https://user-images.githubusercontent.com/96164229/221401977-742c240f-85c7-4c52-ab81-a6aaf18550ea.png" width="60%" height="60%">
+<img src="https://user-images.githubusercontent.com/96164229/221401977-742c240f-85c7-4c52-ab81-a6aaf18550ea.png" width="216" height="282">
 
 In the image we have changed `ibase` to `16`(hexadecimal) and `obase` to `2`(binary) that means that input will be in hexadecimal and the output will be in the equivalent binary. So that's why for every hexadecimal input an equivalent binary output is produced!!
 
