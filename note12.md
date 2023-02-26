@@ -83,5 +83,60 @@ echo $a
 
 **IMPORTANT**
 
+*If you are using variables inside double parentheses then it's a good practice to not use `$` before the variable.*
+
+Example:
+
+```bash
+((a+4)) # recommended
+(( $a + 4 )) # not recommended
+```
+
+[t15](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t15).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221395135-0122ef16-c4ed-4513-9866-15fbf507d705.png" width="60%" height="60%">
+
+
+**Double parentheses fail when we perform arithmetic operations on floating point numbers!!**
+
+[t16](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t16).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221395502-1a89d04a-457c-4025-a494-641b33a99a1a.png" width="60%" height="60%">
+
+Here, it doesnot recognise `.` in the expression `1.2+2.8`.
+
+
+[t16_b](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t16_b).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221395539-993e46e4-32e7-4cb7-8737-ab284d9c5cf8.png" width="60%" height="60%">
+
+Here, $15/2$ should have produced $7.5$ but since `(())` are used mainly for integer arithmetic, so it discards the decimal part and only shows `7`.
+
+
+## The `bc` calculator
+
+[t17](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t17).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221395916-9b8e64c3-4668-4730-b744-de5c0195094c.png" width="60%" height="60%">
+
+`scale=2;` basically means the number of digits to display after the decimal point. Here 2 digits will be displayed after the decimal point because `scale` is set to `2`.
+
+`echo "scale=2; 15/2" | bc`, we saw this format of command yesterday [here](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/note11.md), it basically sends the output of `echo "scale=2; 15/2"` to the `bc` calculator.
+
+[t18](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/t18).
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221396334-071ebb02-52a6-4e87-9be5-f4b2d3a089fd.png" width="60%" height="60%">
+
+The `bc` calculator can also be used for arithmetical operations on integers.
 
 ---
