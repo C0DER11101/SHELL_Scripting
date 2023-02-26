@@ -1,0 +1,10 @@
+#!/bin/bash
+
+((a=10))
+
+if ((a>5))
+then
+	echo -e "$a is larger!\n"
+else
+	echo -e "$a is smaller!\n"
+fi
