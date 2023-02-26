@@ -137,6 +137,11 @@ Here, $15/2$ should have produced $7.5$ but since `(())` are used mainly for int
 
 <img src="https://user-images.githubusercontent.com/96164229/221396334-071ebb02-52a6-4e87-9be5-f4b2d3a089fd.png" width="60%" height="60%">
 
-The `bc` calculator can also be used for arithmetical operations on integers.
+The `bc` calculator can also be used for arithmetical operations on integers. Check out [bcCalculator.md](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/bcCalculator.md) for more information.
 
+## Difference between \$(()) and (())
+
+(()) only evaluates the expression that is written inside of it. **It doesnot return any standard output**.
+
+\$(()) on the other hand **returns standard output**.
 ---
