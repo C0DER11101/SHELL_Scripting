@@ -1,0 +1,10 @@
+#!/bin/bash
+
+a=`echo "scale=2; 15/2" | bc`
+
+
+b=$(echo "1.2+2.8" | bc)
+
+echo $a
+
+echo $b
