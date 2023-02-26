@@ -1,0 +1,7 @@
+#!/bin/bash
+
+a=1.2
+
+b=$(echo "$a+2.8" | bc)
+
+echo $b
