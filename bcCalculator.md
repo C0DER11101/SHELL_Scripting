@@ -188,5 +188,78 @@ In the image we have changed `ibase` to `16`(hexadecimal) and `obase` to `2`(bin
 
 ## Programming features that can be used with `bc`
 
+### if else in `bc`
+
+<img src="https://user-images.githubusercontent.com/96164229/221402821-94dcb4ef-e31f-4d04-93d1-9e6066e8af86.png" width="513" height="143">
+
+It's pretty clear how this if-else is going to work in `bc`.
+
+Another if-else in `bc`:
+
+<img src="https://user-images.githubusercontent.com/96164229/221403015-29621244-3424-4438-bfa4-1206ae803955.png" width="542" height="188">
+
+### for loop and while loops in `bc`
+
+>for loops
+
+<img src="https://user-images.githubusercontent.com/96164229/221403240-fb2d47ce-1487-45cb-ba29-4b482b72a4b4.png" width="462" height="366">
+
+It's similar to C for loops!!
+
+>while loops
+
+<img src="https://user-images.githubusercontent.com/96164229/221403461-2fe25987-0ffc-4de5-85e9-36570fe795f8.png" width="346" height="437">
+
+
+### Functions in `bc`
+>To define any function in `bc`, we use `define` and then the name of the function.
+
+<img src="https://user-images.githubusercontent.com/96164229/221403628-a2d04227-4777-4050-b4d0-065376c116ab.png" width="378" height="193">
+
+Notice the `0` at the end in the image, it's actually the return value of `add()`, it returns 0.
+
+We can manipulate the return value of a function by adding a `return <something>` line at the end of the function definition.
+
+<img src="https://user-images.githubusercontent.com/96164229/221403735-8d6fcc0e-ee80-4770-b915-238305315394.png" width="548" height="229">
+
+We added `return 2` at the end of the definition of `mult()` and so we see `2` at the end.
+
+In place of `return` we can also use `break`, `continue`, or `quit`.
+
+
+### Taking input from the output of another command
+
+<img src="https://user-images.githubusercontent.com/96164229/221404043-173ffd9a-0e71-4261-8a54-d27505b3a16a.png" width="1453" height="63">
+
+`echo "a=10; a*20"` will produce the output `a=10; a*20` and `echo "a=10; a*20" | bc ` will send the output of `echo` to `bc`. So we get the output to be `200`. `bc` does the calculation `a=10; a*20` which produces `200`.
+
+We can also put `if-else` statements like this:
+
+<img src="https://user-images.githubusercontent.com/96164229/221404275-861f37a1-b7ff-4126-8d5d-a3233698dc33.png" width="1821" height="77">
+
+
+### `bc` executes files
+
+We created a file named: [mathsop](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/mathsop).
+
+We entered some commands that `bc` could execute and then basically made `bc` to execute the commands of the file and the output below was generated:
+
+**Output:**
+
+<img src="https://user-images.githubusercontent.com/96164229/221405330-71754a38-525e-451a-9060-a90169ed104d.png" width="441" height="201">
+
+
+Notice that when we type `bc` in the command line and press enter then we get some output like speaking about the version of `bc` and its warranty information:
+
+<img src="https://user-images.githubusercontent.com/96164229/221396766-8f499689-8e07-462d-a4f3-dd976a6e2ccf.png" width="60%" height="60%">
+
+If we wish to hide this then we just to type `bc -q`
+
+<img src="https://user-images.githubusercontent.com/96164229/221405569-148930a0-a1b4-4d2c-ae19-5ea57207aae0.png" width="1320" height="257">
+
+`bc -q mathsop` will just show the output this time, no information about version or warranty will be shown about `bc`.
+
+If we donot wish to quit `bc` by typing `quit` there manually then we can type the `quit` instruction in the file `mathsop`, that way when we run `bc -q mathsop` then it will show us the output and quit automatically.
+
 
 ---
