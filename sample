@@ -1,0 +1,5 @@
+#! /bin/bash
+
+var=$(seq 1 10)
+
+echo $var
