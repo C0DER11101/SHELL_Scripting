@@ -16,4 +16,8 @@ I am currently in my _3rd year_.
 
 _May be what I just said could become a part of a project!!_
 
+[Change the prompt of the terminal in Linux](https://phoenixnap.com/kb/change-bash-prompt-linux).
+
+[Show github branch in the prompt](https://www.shellhacks.com/show-git-branch-terminal-command-prompt/).
+
 ---
