@@ -1,0 +1,19 @@
+#! /bin/bash
+
+for user in user{51..70}
+do
+	id ${user} &> /dev/null
+	exists=$?
+
+	if [ ${exists} -eq 0 ]
+	then
+		echo "Deleting ${user}..."
+		deluser ${user} --remove-home
+		if [ $? -eq 0 ]
+		then
+			echo -e "deletion successful!!\n"
+		fi
+	else
+		echo -e "${user} doesn't exist!!\n"
+	fi
+done
