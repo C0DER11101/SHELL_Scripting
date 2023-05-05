@@ -1,0 +1,12 @@
+#! /bin/bash
+
+# A shell script to execute a task defined in a while loop for as long as the user wants.
+
+shouldRun="yes"
+
+while [ ${shouldRun} = "yes" -o ${shouldRun} = "y" ]
+do
+	echo "I am running..."
+	read -p "Do you want me to run more? " shouldRun
+	shouldRun=`echo ${shouldRun} | tr [A-Z] [a-z]`
+done
