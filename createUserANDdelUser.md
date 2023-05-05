@@ -27,9 +27,11 @@ We send `"${user}:${user}_@123"` as an input to the command `chpasswd`.
 When running `createUser`, we need to provide sudo privileges, because we are using the command `adduser` in it.
 
 **Image-1:**
+
 <img src="https://user-images.githubusercontent.com/96164229/236435696-e4cdcdcf-3828-4494-bcbf-8800c2873213.png" width="60%" height="60%">
 
 **Image-1:**
+
 <img src="https://user-images.githubusercontent.com/96164229/236435786-0eab4a44-500f-4ac1-ba3e-5b0512383e64.png" width="60%" height="60%">
 
 
