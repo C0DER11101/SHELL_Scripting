@@ -1,0 +1,9 @@
+#! /bin/bash
+
+((a=1))
+
+while ((a<10))
+do
+	echo "Number is: ${a}"
+	((a++))
+done
