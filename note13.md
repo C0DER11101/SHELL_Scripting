@@ -131,6 +131,9 @@ do
 done
 ```
 
+**Output:**
+<img src="https://user-images.githubusercontent.com/96164229/236439122-027505fc-2302-49c4-9bbf-a5c49615e35e.png" width="60%" height="60%">
+
 
 <p align="center">
 &#9678;&#9678;&#9678;
