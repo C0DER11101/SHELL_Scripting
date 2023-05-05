@@ -10,6 +10,7 @@ id <username>
 <p align="center">
 OR
 </p>
+
 ```bash
 id ${USER}
 ```
