@@ -1,0 +1,10 @@
+#! /bin/bash
+
+shouldRun="yes"
+
+until [ ${shouldRun} = "NO" -o ${shouldRun} = "N" ]
+do
+	echo "I am running.."
+	read -p "Do want me to run more?: " shouldRun
+	shouldRun=$(echo ${shouldRun} | tr [a-z] [A-Z]) # convert any lowercase characer into uppercase character
+done
