@@ -1,0 +1,22 @@
+#!/bin/bash
+
+usr_inp="yes"
+
+while [ ${usr_inp} = "yes" ]
+do
+	for i in {1..5}
+	do
+		if ((i==3))
+		then
+			echo "loop break"
+			break 5
+		fi
+
+		echo "i is ${i}"
+	done
+
+	echo "inner loop terminated"
+	read -p "do you want to continue? " usr_inp
+done
+
+echo "Script completed execution"
