@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in {1..5}
+do
+	if ((i==3))
+	then
+		echo "loop break"
+		break
+	fi
+
+	echo "i is ${i}"
+done
