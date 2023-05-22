@@ -19,7 +19,7 @@
 
 # Options that we can use with `echo`
 
-## 1. -e
+## -e
 >Enables the interpretation of the escape sequence characters.
 
 [echo3](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/echo3)
