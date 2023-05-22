@@ -2,6 +2,6 @@
 
 var="hello   world!!"
 
-echo ${var}
+echo ${var} # echo hello   world!!
 
-echo "${var}"
+echo "${var}" # echo "hello   world!!"
