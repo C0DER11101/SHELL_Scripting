@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "With trailing newline"
+echo -n "Without trailing newline"
