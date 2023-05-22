@@ -9,7 +9,7 @@
 <img src="https://user-images.githubusercontent.com/96164229/239968854-e67e284c-db45-4637-9cf1-1de8315bce3b.png" width="60%" height="60%">
 
 
-**If a quoted string with multiple spaces is stored in a variable and if in we have not enclosed the variable around quotes while using it with** `echo` **then those multiple spaces will be replaced by a single space.**
+**If a quoted string with multiple spaces is stored in a variable and if we have not enclosed the variable name within quotes while using it with** `echo` **then those multiple spaces will be replaced by a single space.**
 
 * [echo2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/echo2)
 
