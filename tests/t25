@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+user_inp="yes"
+
+while [ ${user_inp} = "yes" ] # enclosing loop-2
+do
+	for i in {1..5} # enclosing loop-1
+	do
+		if ((i==3))
+		then
+			echo "Move on to next iteration"
+			continue 2 # continue to while loop(i.e enclosing loop-2); this will result in an infinite loop!!
+		fi
+		echo "i is ${i}"
+	done
+
+	echo "Inner loop terminated"
+	read -p "Do you want to continue?: " user_inp
+	
+done
