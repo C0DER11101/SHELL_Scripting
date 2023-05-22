@@ -34,6 +34,8 @@
 
 <img src="https://user-images.githubusercontent.com/96164229/239957427-8da5c645-9bb6-4269-aef7-752ac8dbe40f.png" width="60%" height="60%">
 
+**Here we get an infinite loop.**
+
 <details>
 <summary>Very important</summary>
 If there are only two loops(one nested into another) and say you wrote a statement `break 5`; now `break 5` means terminate from the $5^{th}$ loop but there is no $5^{th}$ loop here, there are only 2 loops, so even though you wrote `break 5` it will be treated as `break 2`.
