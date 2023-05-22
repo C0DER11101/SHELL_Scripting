@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# break n
+
+User_inp="yes"
+
+while [ ${User_inp} = "yes" ] # enclosing loop - 2
+do
+	for i in {1..5} # enclosing loop - 1
+	do
+		if ((i==3))
+		then
+			echo "loop break"
+			break 2 # will terminate both the for and the while loop
+		fi
+		echo "i is ${i}"
+	done
+
+	echo "Inner loop terminated"
+	read -p "Do you want to continue? " User_inp
+done
