@@ -1,0 +1,6 @@
+#!/bin/bash
+
+declare -a userNames=($(seq 10 30))
+
+echo -e "Printing using @\n${userNames[@]}"
+echo -e "Printing using *\n${userNames[*]}"
