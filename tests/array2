@@ -1,0 +1,10 @@
+#!/bin/bash
+
+declare -A arr
+
+arr=([user1]="hello" [user2]="shell" [user3]="scripters" [num]=1000)
+
+echo "user1: ${arr[user1]}"
+echo "user2: ${arr[user2]}"
+echo "user3: ${arr[user3]}"
+echo "num: ${arr[num]}"
