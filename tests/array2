@@ -8,3 +8,10 @@ echo "user1: ${arr[user1]}"
 echo "user2: ${arr[user2]}"
 echo "user3: ${arr[user3]}"
 echo "num: ${arr[num]}"
+
+arr[user1]="world"
+
+echo "user1: ${arr[user1]}"
+echo "user2: ${arr[user2]}"
+echo "user3: ${arr[user3]}"
+echo "num: ${arr[num]}"
