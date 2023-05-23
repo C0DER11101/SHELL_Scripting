@@ -12,3 +12,7 @@ echo ${userNames[5]}
 echo ${userNames[6]}
 echo ${userNames[-2]}
 echo ${userNames[-1]}
+
+userNames[0]="hello"
+
+echo ${userNames[0]}
