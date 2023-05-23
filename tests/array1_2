@@ -1,0 +1,11 @@
+#!/bin/bash
+
+declare -a userNames
+userNames=("user1" "user2" 4 5 "user3" "user4")
+
+echo "Index 0: ${userNames[-6]}"
+echo "Index 1: ${userNames[-5]}"
+echo "Index 2: ${userNames[-4]}"
+echo "Index 3: ${userNames[-3]}"
+echo "Index 4: ${userNames[-2]}"
+echo "Index 5: ${userNames[-1]}"
