@@ -36,6 +36,7 @@ It's similar to accessing the value of a normal variable with only one differenc
 
 <details>
 <summary>Scripts</summary>
+
 [array1](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/array1)
 
 **Output:**
@@ -52,6 +53,7 @@ will access the last element in the array `userNames`.
 
 <details>
 <summary>Scripts</summary>
+
 [array1_2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/array1_2)
 
 **Output:**
@@ -70,6 +72,7 @@ userNames[0]="hello"
 
 <details>
 <summary>Scripts</summary>
+
 [array1_3](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/array1_3)
 
 **Output:**
@@ -107,6 +110,7 @@ arr[user1]="world"
 
 <details>
 <summary>Scripts</summary>
+
 [array2](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/array2)
 
 **Output:**
@@ -129,6 +133,7 @@ will both print all the values in the array `userNames`
 
 <details>
 <summary>Scripts</summary>
+
 [array3](https://github.com/C0DER11101/SHELL_Scripting/blob/ShellScript/tests/array3)
 </details>
 
