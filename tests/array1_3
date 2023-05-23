@@ -1,0 +1,14 @@
+#!/bin/bash
+
+declare -a userNames
+userNames=($(seq 50 100))
+
+echo ${userNames[0]}
+echo ${userNames[1]}
+echo ${userNames[2]}
+echo ${userNames[3]}
+echo ${userNames[4]}
+echo ${userNames[5]}
+echo ${userNames[6]}
+echo ${userNames[-2]}
+echo ${userNames[-1]}
