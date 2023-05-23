@@ -1,0 +1,8 @@
+#!/bin/bash
+
+declare -A arr=([user1]="hello" [user2]="shell" [user3]="scripters in Linux" [num]=1000)
+
+for i in ${arr[*]}
+do
+	echo "i = ${i}"
+done
