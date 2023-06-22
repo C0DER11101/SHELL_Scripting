@@ -55,6 +55,40 @@ id <username>
 ```
 This will return the userID(uid), groupID(gid) and other options if <userame> exists.
 
+## 5
+Create a user in a different home directory in Linux.
+
+```bash
+useradd -m <username>
+```
+providing the option `-m` will create a dedicated home directory for the new user <username>. If this option is not provided then the new user <username> won't have a dedicated home directory(it will be created in the normal home directory).
+
+The user <username> will be create after this command and will be also be registered in /etc/passwd and /etc/group.
+
+We need to assign the new user with a login password otherwise it won't be accessible.
+
+```bash
+passwd <username>
+```
+this command will assign an login password to <username>.
+
+```bash
+su - <username>
+```
+this command will access the new user with <username>.
+
+1. Press ENTER.
+2. Enter the password for <username>.
+3. You are in the dedicated home directory of <username> and are <username> now.
+
+## 6
+Custom home directory for user.
+
+```bash
+useradd -m -d <home_directory_location> <username>
+```
+this command will create the user <username> in <home_directory_location>. Note that <home_directory_location> should exsit.
+
 
 <p align="center">
 &#9678; &#9678; &#9678;
