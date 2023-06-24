@@ -1,0 +1,114 @@
+$ INVOKING SED
+^^^^^^^^^^^^^^^
+
+	sed SCRIPT INPUTFILE
+
+if INPUTFILE is not specified then sed filters the contents of the standard input;
+
+sed writes output to the standard output;
+
+	sed 's/hello/world/' input.txt > output.txt
+
+this command replaces all occurrences of 'hello' by 'world' in input.txt and writes the changes done to the file
+output.txt
+
+	sed 's/hello/world/' < input.txt > output.txt  => this command does the same thing as the command that we wrote
+above;
+
+	cat input.txt | sed 's/hello/world/' - > output.txt => this command will also do the same thing as the above two
+commands;
+
+===========================================================================================================================
+# pipe(|)                                                                                                                 #
+# *******                                                                                                                 #
+#                                                                                                                         #
+# pipe is a command that lets you use two or more commands such that the output of one command serves as the input for the#
+# next command just like a pipeline;                                                                                      #
+# it helps you to mash up two or more commands at the same time and run them consecutively;                               #
+# example:                                                                                                                #
+#	cat filename | grep <patterh>                                                                                     #
+# the cat command will span the lines of the filename into the standard output, the output of cat command i.e the spanned #
+# lines will be fed to grep command as input through the pipe, '|', command and grep will selectively display only those  #
+# lines or words which match the <pattern>;                                                                               #
+===========================================================================================================================
+
+so in the above command we used the cat command with input.txt and the output of cat was piped to sed command which 
+basically replaced every occurrence of 'hello' by 'world' and redirected the output to another file named output.txt;
+
+	sed -i 's/hello/world/' input.txt
+this command will modify the file input.txt and will not display anything in the standard output; all the modification will
+be written to input.txt;
+
+
+sed prints all the processes input to the standard output;
+
+we can use '-n' to suppress the output and 'p' to print only specific lines;
+
+	sed -n '3p' input.txt
+this command will print only line 3 of input.txt;
+
+but
+	sed '3p' input.txt
+will print all the contents of input.txt with line 3 repeated twice;
+
+> if multiple input files are provided to sed then it will treat them as one long stream;
+
+	sed -n '1p ; $p' one.txt two.txt three.txt
+this command prints the first line of one.txt and the last line of the last file(three.txt);
+
+
+	sed -s -n '1p;$p' one.txt two.txt three.txt
+		OR
+	sed -n -s '1p;$p' one.txt two.txt three.txt
+this command will print the first and the last line of one.txt, the first and the last line of two.txt and the first and
+the last line of three.txt;
+
+sed command basically uses the first parameter provided to it as a SCRIPT and considers the parameters after it to be input
+files uses the SCRIPT to perform actions on the file provided to it as input;
+
+but if we use -e or -f options with sed then it uses then sed considers all the parameters as input files;
+
+-e is --expression
+
+Usage with -e
+^^^^^^^^^^^^^
+
+	sed -e 's/hello/world/' input.txt > output.txt
+
+Usage with --expression
+^^^^^^^^^^^^^^^^^^^^^^^
+
+	sed --expression='s/hello/world/' input.txt > output.txt
+
+-f is --file
+
+Usage with -f
+^^^^^^^^^^^^^
+suppose that we have a sed file script.sed which contains the following regex:
+
+	s/hello/world/
+
+then this is how we will use that sed script with input.txt:
+
+	sed -f script.sed input.txt > output.txt
+
+Usage with --file
+^^^^^^^^^^^^^^^^^
+consider the same sed script
+
+	sed --file=script.sed input.txt > output.txt
+
+
+$ COMPLETE FORMAT OF sed
+^^^^^^^^^^^^^^^^^^^^^^^^
+complete format for invoking sed:
+
+	sed OPTIONS... [SCRIPT] [INPUTFILE...]
+
+
+
+Syntax of sed command:
+
+	[addr]X[options]
+
+	sed '30,35d' input.txt > output.txt
